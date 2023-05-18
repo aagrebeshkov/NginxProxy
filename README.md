@@ -110,5 +110,5 @@ docker run --name nginx_proxy -d -p 8080:8080 nginx_proxy
 
 Результат:
 При открытии адреса на Proxy запрос будет отправлен на первый сервер в соответствующую web-страницу. 
-Для настоящих сервисов необходимо заменить значение параметров "location" и "proxy_pass" в nginx.conf.
+Для настоящих сервисов необходимо заменить значение параметров "location" и "proxy_pass" в nginx.conf.<br>
 На первом сервере с Apache2 в access логе /var/log/apache2/other_vhosts_access.log можно увидеть соответствующие запросы.
