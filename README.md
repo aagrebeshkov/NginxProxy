@@ -101,9 +101,28 @@ docker build -t nginx_proxy .
 ```
 <br>
 
-Запуск контейнера с Nginx:
+Запуск контейнера с Nginx в отдельном контейнере:
 ```bash
 docker run --name nginx_proxy -d -p 8080:8080 nginx_proxy
+```
+<br>
+
+
+Запуск контейнера с Nginx через docker-compose.
+Содержимое docker-compose.yml:
+```bash
+version: '3.1'
+services:
+  nginx:
+    image: nginx_proxy
+    restart: always
+    ports:
+      - 8080:8080
+```
+<br>
+
+```bash
+docker-compose up -d
 ```
 <br>
 
