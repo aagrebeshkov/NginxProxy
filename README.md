@@ -121,6 +121,7 @@ services:
 ```
 <br>
 
+Запуск docker-compose:
 ```bash
 docker-compose up -d
 ```
