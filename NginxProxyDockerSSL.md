@@ -17,7 +17,7 @@ sudo apt install -y apache2
 | index.html | \<h1>It worked!\</h1> | http://192.168.1.179/ |
 <br>
 
-### Установка и настройка Nging Proxy
+### Установка и настройка Nging Proxy в Docker
 Установка Nginx Proxy в контейнере docker на втором сервере под OS CentOS.
 
 Содержимое docker-compose.yml:
